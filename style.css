@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    font-family: unset;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 0;
+    color: white;
+    background-color: #2b59c3;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url("assets/header-image.jpg");
+}
+
+header nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 130px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.pacotes {
+    background-color: #F6F6F4;
+    padding: 20px;
+}
+
+.pacotes .card {
+    width: 300px;
+    height: 340px;
+    background-color: white;
+    border-radius: 24px 0px;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.pacotes .card-content ul li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.pacotes .card-content li svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-left: 13px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.pacotes .card-content {
+    padding-left: 8px;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    background: #ff7f11;
+    border-radius: 10px 0 0 10px;
+    margin-top: 40px;
+}
+
+.pacotes .card .card-tag-top p {
+    margin: 7px;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.pacotes .card .card-tag-bot {
+    position: absolute;
+    left: 0;
+    background-color: #2b59c3;
+    margin-top: 185px;
+    border-radius: 0 10px 10px 0;
+}
+
+.pacotes .card .card-tag-bot p {
+    margin: 7px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    max-width: 1050px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .pacotes-title {
+    margin: 25px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.servicos {
+    margin: 0 60px 0 60px;
+    padding: 20px;
+}
+
+.servicos .servicos-cards .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.servicos .servicos-title {
+    margin: 25px 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.servicos .card {
+    margin: 0 20px;
+}
+
+.servicos .card p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.servicos button {
+    background-color: #2b59c3;
+    color: white;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.servicos .card svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+}
+
+.servicos .card svg:hover {
+    stroke: #2b59c3;
+    transform: scale(1.1);
+}
+
+.servicos .card button:hover {
+    opacity: 0.9;
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.servicos .servicos-cards {
+    display: flex;
+    max-width: 1050px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.contato {
+    padding: 60px;
+    background: #F6F6F4;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    left: calc(20% - 175px);
+    top: calc(50% - 150px);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 1px 6px 0px rgb(32, 33, 36, .28);
+}
+
+.contato .contato-card li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contato .contato-card li {
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.contato .contato-card li svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.contato .contato-card h1 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 21px;
+    padding-left: 43px;
+    text-align: left;
+}
+
+
+/* RESPONSIVIDADE */
+
+
+/* ESPECIAL MAPA */
+
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+        background: #F6F6F4;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    .contato .contato-card {
+        width: 350px;
+        height: 300px;
+        background: white;
+        position: absolute;
+        z-index: 99;
+        left: calc(20% - 175px);
+        top: calc(50% - 150px);
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 1px 6px 0px rgb(32 33 36 / 28%);
+        left: 37px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 60px 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .contato .contato-card {
+        position: static;
+        margin-bottom: 60px;
+        z-index: 0;
+    }
+    #map {
+        height: 400px;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+
+
+/* @media (max-width: 767px) {
+
+} */
+
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 60px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        z-index: 99;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        color: white;
+        background: #546a76;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+    .servicos button {
+        background-color: #2b59c3;
+        color: white;
+        margin-top: 15px;
+        transition: all 0.4s;
+    }
+    .contato {
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .contato .contato-card {
+        position: static;
+        margin-bottom: 60px;
+        z-index: 0;
+    }
+    #map {
+        height: 300px;
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+
+
+/* @media (min-width: 768px) and (max-width: 979px) {
+  ...;
+} */
+
+
+/* Large desktop */
+
+
+/* @media (min-width: 1200px) {
+  ...;
+} */
